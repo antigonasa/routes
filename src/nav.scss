@@ -1,0 +1,57 @@
+nav{
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 5%;
+    z-index: 100;
+    background-color: #fff;
+    .logo{
+        font-size: 25px;
+        color:#427cff;
+        font-weight: 600;
+    }
+    .links{
+        display: flex;
+        align-items: center;
+        a{
+            color:#333;
+            font-size: 17px;
+            margin:0 7.5px;
+            position: relative;
+            padding:15px 5px;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        a::after{
+            content: '';
+            position: absolute;
+            background-color: #427cff;
+            width: 0;
+            height: 3px;
+            bottom:0;
+            right:0;
+            left:0;
+            margin-left: auto;
+            margin-right: auto;
+            transition: 0.3s ease-in-out;
+        }
+    }
+    .auth{
+        display: flex;
+        align-items: center;
+        a{
+            color:#427cff;
+            border:1px solid #427cff;
+            padding:5px 10px;
+            font-size: 17px;
+            border-radius: 5px;
+            margin:0 10px
+        }
+    }
+}
